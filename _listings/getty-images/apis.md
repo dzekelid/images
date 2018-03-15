@@ -31,7 +31,7 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/getty-images/v3-downloads-images-id-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/getty-images/v3-downloads-videos-id-post.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
