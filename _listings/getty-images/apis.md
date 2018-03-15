@@ -31,7 +31,7 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/getty-images/v3-boards-board-id-comments-comment-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/getty-images/v3-collections-get.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
