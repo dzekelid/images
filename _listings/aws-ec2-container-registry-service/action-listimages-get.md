@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ListImages&k=1:
+  /?Action=ListImages:
     get:
       summary: ' List Images '
       description: Lists all the image IDs for a given repository
