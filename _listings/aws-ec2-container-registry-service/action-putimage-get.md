@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=PutImage&k=1:
+  /?Action=PutImage:
     get:
       summary: ' Put Image '
       description: Creates or updates the image manifest and tags associated with
