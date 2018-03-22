@@ -15,7 +15,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeImages&k=1:
+  /?Action=DescribeImages:
     get:
       summary: Describe Images
       description: Describes the images
