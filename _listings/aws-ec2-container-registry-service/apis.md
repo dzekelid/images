@@ -33,7 +33,7 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/aws-ec2-container-registry-service/action-listimages-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/aws-ec2-container-registry-service/action-putimage-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/AmazonECR/latest/APIReference/Welcome.html
