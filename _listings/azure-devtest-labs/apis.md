@@ -11,9 +11,9 @@ tags:
 - Stack Network
 - Orchestration
 - Microsoft
-created: "2018-03-15"
-modified: "2018-03-15"
-url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/azure-devtest-labs/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/azure-devtest-labs/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Azure DevTest Labs API
@@ -25,7 +25,7 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/azure-devtest-labs/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-devtestlab-labs-labname-galleryimages-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/azure-devtest-labs/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-devtestlab-labs-labname-customimages-get.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/devtest-lab/
