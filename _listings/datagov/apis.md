@@ -28,7 +28,7 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/datagov/posts-post-image-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/datagov/posts-post-image-put.md
 x-common:
 - type: x-blog
   url: https://www.data.gov/meta/
