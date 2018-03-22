@@ -18,9 +18,9 @@ tags:
 - Discovery
 - Containers
 - Amazon Web Services
-created: "2018-03-15"
-modified: "2018-03-15"
-url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/aws-ec2-container-registry-service/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/aws-ec2-container-registry-service/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: AWS EC2 Container Registry API
@@ -33,7 +33,7 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/aws-ec2-container-registry-service/action-putimage-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/aws-ec2-container-registry-service/action-describeimages-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/AmazonECR/latest/APIReference/Welcome.html
