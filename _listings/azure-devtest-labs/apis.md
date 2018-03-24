@@ -25,7 +25,7 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/azure-devtest-labs/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-devtestlab-labs-labname-customimages-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/azure-devtest-labs/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-devtestlab-labs-labname-customimages-name-get.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/devtest-lab/
