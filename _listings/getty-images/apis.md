@@ -32,11 +32,11 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Get Purchased Images
-  description: "This endpoint returns a list of all assets purchased on gettyimages.com
-    by the username used for authentication. \r\nUse of this endpoint requires configuration
-    changes to your API key. \r\nPlease contact [developersupport@gettyimages.com](mailto:developersupport@gettyimages.com)
-    to learn more.\r\n\r\nYou'll need an API key and access token to use this resource.
+- name: Getty Images Get Previously Purchased Images
+  description: "This endpoint returns a list of all images purchased on gettyimages.com
+    by the username used for authentication.\r\nUse of this endpoint requires configuration
+    changes to your API key. Please contact [developersupport@gettyimages.com](mailto:developersupport@gettyimages.com)\r\nto
+    learn more.\r\n\r\nYou'll need an API key and access token to use this resource.
     Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)\r\npage
     for more information on how to sign up for an API key."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
@@ -45,9 +45,9 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-purchased-assets-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-purchased-images-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-purchased-assets-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-purchased-images-get-postman.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
