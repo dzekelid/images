@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: Getty Images
-  description: Build applications using the world's most powerful imagery
+  title: Getty Images Search Images
+  description: Use this endpoint to search over a blend of our contemporary stock
+    photos, illustrations, archival images, editorial photos, illustrations and archival
+    images.
   version: 1.0.0
 host: api.gettyimages.com
 basePath: /
