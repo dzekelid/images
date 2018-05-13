@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Akamai API List Images to a Limit
-  description: List Images to a Limit
+  title: Akamai API List Images Matching a URL
+  description: List Images Matching a URL
   version: 1.0.0
 host: developer.akamai.com
 basePath: /
@@ -15,13 +15,13 @@ consumes:
 paths:
   /imaging/v0/images:
     get:
-      summary: List Images to a Limit
-      description: List Images to a Limit
-      operationId: imagingv0imageslimit
+      summary: List Images Matching a URL
+      description: List Images Matching a URL
+      operationId: imagingv0imagesurl
       parameters:
       - in: query
-        name: limit
-        description: Specifies maximum number images to retrieve
+        name: url
+        description: URL to search for
         type: string
       responses:
         200:
@@ -30,7 +30,7 @@ paths:
       - imaging
       - v0
       - images
-      - limit
+      - url
 definitions: []
 x-collection-name: Akamai
 x-streamrank:
