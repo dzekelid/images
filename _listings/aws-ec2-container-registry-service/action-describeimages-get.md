@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 Container Registry API
+  title: AWS EC2 Container Registry API Describe Images
   version: 1.0.0
+  description: |-
+    Returns metadata about the images in a repository, including image size, image
+                tags, and creation date.
 schemes:
 - http
 produces:
