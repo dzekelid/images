@@ -26,7 +26,28 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/azure-devtest-labs/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-devtestlab-labs-labname-galleryimages-get.md
+- name: Azure DevTest Labs API Custom Images List
+  description: List custom images in a given lab.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-devtest-integrate.png
+  humanURL: https://azure.microsoft.com/en-us/services/devtest-lab/
+  baseURL: http:://management.azure.com//
+  tags: Images
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/azure-devtest-labs/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-devtestlab-labs-labname-customimages-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/azure-devtest-labs/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-devtestlab-labs-labname-customimages-get-postman.md
 x-common:
+- type: x-documentation
+  url: https://docs.microsoft.com/en-us/azure/devtest-lab/
+- type: x-pricing
+  url: https://azure.microsoft.com/en-us/pricing/details/devtest-lab/
+- type: x-service-level-agreements
+  url: https://azure.microsoft.com/en-us/support/legal/sla/devtest-lab/
+- type: x-status
+  url: https://azure.microsoft.com/en-us/status/
+- type: x-website
+  url: https://azure.microsoft.com/en-us/services/devtest-lab/
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/devtest-lab/
 - type: x-pricing
