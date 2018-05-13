@@ -32,21 +32,25 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Get Asset Change Notification
-  description: "# Delete Asset Changes\r\n\r\nConfirm asset changes acknowledges receipt
-    of asset changes (from the PUT asset changes endpoint).\r\n\r\n##  Quickstart\r\n\r\nYou'll
-    need an API key and a [Resource Owner Grant](http://developers.gettyimages.com/en/authorization-faq.html)
-    access token to use this resource.\r\nPlease see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
-    page for more information on how to sign up for an API key."
+- name: Getty Images Get Asset Change Channels
+  description: "# Get Partner Channels\r\n\r\nRetrieves the channel data for the partner.
+    This data can be used to populate the channel_id parameter in the Put Asset Changes
+    query.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner
+    Grant](http://developers.gettyimages.com/en/authorization-faq.html) access token
+    to use this resource.\r\nPlease see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
+    page for more information on how to sign up for an API key. \r\n\r\nOnly channels
+    that have been queried in the last 120 days will be included in the list of channels.\r\nPartners
+    who have a channel that has been removed should contact their sales representative
+    to be set up again."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
   humanURL: http://www.gettyimages.com/
   baseURL: https://api.gettyimages.com//
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-asset-changes-change-sets-change-set-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-asset-changes-channels-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-asset-changes-change-sets-change-set-id-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-asset-changes-channels-get-postman.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
