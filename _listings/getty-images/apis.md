@@ -32,25 +32,21 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Get Asset Change Channels
-  description: "# Get Partner Channels\r\n\r\nRetrieves the channel data for the partner.
-    This data can be used to populate the channel_id parameter in the Put Asset Changes
-    query.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner
-    Grant](http://developers.gettyimages.com/en/authorization-faq.html) access token
-    to use this resource.\r\nPlease see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
-    page for more information on how to sign up for an API key. \r\n\r\nOnly channels
-    that have been queried in the last 120 days will be included in the list of channels.\r\nPartners
-    who have a channel that has been removed should contact their sales representative
-    to be set up again."
+- name: Getty Images Register Assets
+  description: "# Register Assets\r\n\r\nRegisters a list of assets that a customer
+    has stored in their system.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key
+    and a [Resource Owner Grant](http://developers.gettyimages.com/en/authorization-faq.html)
+    access token to use this resource.\r\nPlease see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
+    page for more information on how to sign up for an API key. \r\n\r\n_Note_: In
+    the event of a successful query (response code 200) there will be nothing in the
+    response body."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
   humanURL: http://www.gettyimages.com/
   baseURL: https://api.gettyimages.com//
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-asset-changes-channels-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-asset-changes-channels-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-asset-registrations-post.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
