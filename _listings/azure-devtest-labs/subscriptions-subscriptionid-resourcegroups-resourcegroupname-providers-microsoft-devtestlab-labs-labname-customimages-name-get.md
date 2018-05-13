@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: DevTestLabsClient
-  description: The DevTest Labs Client.
+  title: Azure DevTest Labs API Custom Images Get
+  description: Get custom image.
   version: 1.0.0
 host: management.azure.com
 basePath: /
