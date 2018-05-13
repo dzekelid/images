@@ -32,62 +32,27 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Search for creative images only
-  description: "Use this endpoint to search our contemporary stock photos, illustrations
-    and archival images.\r\n\r\nYou'll need an API key and access token to use this
-    resource. Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
-    \r\npage for more information on how to sign up for an API key. \r\n \r\nYou can
-    show different information in the response by specifying values on the \"fields\"
-    parameter (see details below).\r\nYou can search with only an API key, and that
-    will give you search results that are equivalent to doing a search on the GettyImages.com
-    site without being logged in (anonymous search).  If you are a Getty Images API
-    customer and would like to ensure that your API searches return only assets that
-    you have a license to use, you need to also include an authorization token in
-    the header of your request.  Please consult our [Authorization FAQ](http://developers.gettyimages.com/en/authorization-faq.html)
-    for more information on authorization tokens, and our [Authorization Workflows](https://github.com/gettyimages/gettyimages-api/blob/master/OAuth2Workflow.md)
-    for code examples of getting a token.\r\n\r\n## Working with Fields Sets\r\n\r\nFields
-    sets are used in the **fields** request parameter to receive a suite of metadata
-    fields. The following fields sets are available:\r\n\r\n#### Summary Fields Set\r\n\r\nThe
-    **summary_set** query string parameter fields value represents a small batch of
-    metadata fields that are often used to \r\nbuild search response results. The
-    following fields are provided for every image in your result set when you include
-    **summary_set** in your request.\r\n\r\n```\r\n{\r\n    \"images\": \r\n    [\r\n
-    \       \"asset_family\",\r\n        \"caption\",\r\n        \"collection_code\",\r\n
-    \       \"collection_id\",\r\n        \"collection_name\",\r\n        \"display_sizes\":
-    \r\n        [\r\n            {\r\n                \"name\": \"thumb\"\r\n            }\r\n
-    \       ],\r\n        \"license_model\",\r\n        \"max_dimensions\",\r\n        \"title\"\r\n
-    \   ]\r\n}\r\n```\r\n\r\n#### Detail Fields Set\r\n\r\nThe **detail_set** query
-    string parameter fields value represents a large batch of metadata fields that
-    are often used to \r\nbuild a detailed view of images. The following fields are
-    provided for every image in your result set when you include **detail_set** in
-    your request.\r\n\r\n```\r\n{\r\n    \"images\": \r\n    [\r\n        \"allowed_use\",\r\n
-    \       \"artist\",\r\n        \"asset_family\",\r\n        \"call_for_image\",\r\n
-    \       \"caption\",\r\n        \"collection_code\",\r\n        \"collection_id\",\r\n
-    \       \"collection_name\",\r\n        \"copyright\",\r\n        \"date_created\",\r\n
-    \       \"display_sizes\": \r\n        [\r\n            {\r\n                \"name\":
-    \"comp\"\r\n            },\r\n            {\r\n                \"name\": \"preview\"\r\n
-    \           },\r\n            {\r\n                \"name\": \"thumb\"\r\n            }\r\n
-    \       ],\r\n        \"editorial_segments\",\r\n        \"event_ids\",\r\n        \"graphical_style\",\r\n
-    \       \"license_model\",\r\n        \"max_dimensions\",\r\n        \"orientation\",\r\n
-    \       \"product_types\",\r\n        \"quality_rank\",\r\n        \"referral_destinations\",\r\n
-    \       \"title\"\r\n    ]\r\n]\r\n```\r\n\r\n#### Display Fields Set\r\n\r\nThe
-    **display_set** query string parameter fields value represents the fields that
-    provide you with URLs for the low resolution\r\nfiles that are most frequently
-    used to build a UI displaying search results. The following fields are provided
-    for every image \r\nin your result set when you include **display_set** in your
-    request.\r\n\r\n```Go\r\n{\r\n    \"images\": \r\n    [\r\n        \"display_sizes\":
-    \r\n        [\r\n            {\r\n                \"name\": \"comp\"\r\n            },\r\n
-    \           {\r\n                \"name\": \"preview\"\r\n            },\r\n            {\r\n
-    \               \"name\": \"thumb\"\r\n            }\r\n        ]\r\n    ]\r\n}\r\n```"
+- name: Getty Images Search Images by Image
+  description: "Allows searching for similar creative images by passing the URL to
+    an existing image.\r\n\r\nBefore calling the search by image endpoint, an image
+    must be uploaded to a specific AWS S3 bucket. The bucket name is `search-by-image.s3.amazonaws.com`.\r\nFor
+    example, using cURL:\r\n```sh\r\ncurl -i -X PUT https://search-by-image.s3.amazonaws.com/my-test-image.jpg
+    -H \"Content-Type: image/jpeg\" --data-binary \"@testimage.jpg\"\r\n```\r\n\r\nUploads
+    can be overwritten if the names are the same, so using a prefix like the API Key,
+    application name or company name would help keep that\r\nfrom happening.\r\n\r\nOnce
+    the image has been uploaded, use the full URL in the `image_url` parameter, e.g.
+    `image_url=https://search-by-image.s3.amazonaws.com/my-test-image.jpg`.\r\n\r\nSubsequent
+    searches for the same image can be executed using the `image_fingerprint` that
+    is returned by the inital search."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
   humanURL: http://www.gettyimages.com/
   baseURL: https://api.gettyimages.com//
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-images-creative-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-images-creative-by-image-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-images-creative-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-images-creative-by-image-get-postman.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
