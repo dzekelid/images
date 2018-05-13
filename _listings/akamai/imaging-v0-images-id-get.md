@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Akamai Merged API
+  title: Akamai API Get an Image
+  description: Get an Image
   version: 1.0.0
+host: developer.akamai.com
+basePath: /
 schemes:
 - http
 produces:
@@ -16,7 +19,7 @@ paths:
       description: Get an Image
       operationId: imagingv0imagesid
       parameters:
-      - in: String
+      - in: query
         name: id
         description: Identifies the image for which to retrieve metadata
         type: string
