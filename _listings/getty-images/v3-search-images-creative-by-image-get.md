@@ -1,8 +1,18 @@
 ---
 swagger: "2.0"
 info:
-  title: Getty Images
-  description: Build applications using the world's most powerful imagery
+  title: Getty Images Search Images by Image
+  description: "Allows searching for similar creative images by passing the URL to
+    an existing image.\r\n\r\nBefore calling the search by image endpoint, an image
+    must be uploaded to a specific AWS S3 bucket. The bucket name is `search-by-image.s3.amazonaws.com`.\r\nFor
+    example, using cURL:\r\n```sh\r\ncurl -i -X PUT https://search-by-image.s3.amazonaws.com/my-test-image.jpg
+    -H \"Content-Type: image/jpeg\" --data-binary \"@testimage.jpg\"\r\n```\r\n\r\nUploads
+    can be overwritten if the names are the same, so using a prefix like the API Key,
+    application name or company name would help keep that\r\nfrom happening.\r\n\r\nOnce
+    the image has been uploaded, use the full URL in the `image_url` parameter, e.g.
+    `image_url=https://search-by-image.s3.amazonaws.com/my-test-image.jpg`.\r\n\r\nSubsequent
+    searches for the same image can be executed using the `image_fingerprint` that
+    is returned by the inital search."
   version: 1.0.0
 host: api.gettyimages.com
 basePath: /
