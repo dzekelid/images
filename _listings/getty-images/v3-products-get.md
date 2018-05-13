@@ -1,8 +1,13 @@
 ---
 swagger: "2.0"
 info:
-  title: Getty Images
-  description: Build applications using the world's most powerful imagery
+  title: Getty Images Get Products
+  description: "This endpoint returns all products available to the username used
+    during authentication. As such, this endpoint requires the use of\r\na fully authorized
+    access_token. The product data can then be used as search filters, restricting
+    results to images from a specific product.\r\n\r\nYou'll need an API key and access
+    token to use this resource. Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)\r\npage
+    for more information on how to sign up for an API key."
   version: 1.0.0
 host: api.gettyimages.com
 basePath: /
