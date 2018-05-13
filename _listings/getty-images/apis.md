@@ -32,27 +32,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Search Images by Image
-  description: "Allows searching for similar creative images by passing the URL to
-    an existing image.\r\n\r\nBefore calling the search by image endpoint, an image
-    must be uploaded to a specific AWS S3 bucket. The bucket name is `search-by-image.s3.amazonaws.com`.\r\nFor
-    example, using cURL:\r\n```sh\r\ncurl -i -X PUT https://search-by-image.s3.amazonaws.com/my-test-image.jpg
-    -H \"Content-Type: image/jpeg\" --data-binary \"@testimage.jpg\"\r\n```\r\n\r\nUploads
-    can be overwritten if the names are the same, so using a prefix like the API Key,
-    application name or company name would help keep that\r\nfrom happening.\r\n\r\nOnce
-    the image has been uploaded, use the full URL in the `image_url` parameter, e.g.
-    `image_url=https://search-by-image.s3.amazonaws.com/my-test-image.jpg`.\r\n\r\nSubsequent
-    searches for the same image can be executed using the `image_fingerprint` that
-    is returned by the inital search."
+- name: Getty Images Search Editorial Images
+  description: Use this endpoint to search our editorial stock photos, illustrations
+    and archival images.  Editorial images represent newsworthy events or illustrate
+    matters of general interest, such as news, sport and entertainment and are generally
+    intended for editorial use.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
   humanURL: http://www.gettyimages.com/
   baseURL: https://api.gettyimages.com//
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-images-creative-by-image-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-images-editorial-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-images-creative-by-image-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-images-editorial-get-postman.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
