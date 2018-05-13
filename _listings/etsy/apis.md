@@ -43,15 +43,15 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/etsy/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Etsy Delete Listings Listing Images Listing Image
-  description: Deletes a listing image
+- name: Etsy Post Listings Listing Images
+  description: Upload a new listing image
   image: http://pbs.twimg.com/profile_images/613742962095341568/VGmQvBw8_normal.png
   humanURL: http://www.etsy.com/
   baseURL: https://openapi.etsy.com//v2/private
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/etsy/listings-listing-id-images-listing-image-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/etsy/listings-listing-id-images-post.md
 x-common:
 - type: x-apijson--authoritative
   url: http://apis.io/apisdef/etsy.json
