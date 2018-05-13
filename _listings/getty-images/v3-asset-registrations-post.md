@@ -1,8 +1,14 @@
 ---
 swagger: "2.0"
 info:
-  title: Getty Images
-  description: Build applications using the world's most powerful imagery
+  title: Getty Images Register Assets
+  description: "# Register Assets\r\n\r\nRegisters a list of assets that a customer
+    has stored in their system.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key
+    and a [Resource Owner Grant](http://developers.gettyimages.com/en/authorization-faq.html)
+    access token to use this resource.\r\nPlease see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
+    page for more information on how to sign up for an API key. \r\n\r\n_Note_: In
+    the event of a successful query (response code 200) there will be nothing in the
+    response body."
   version: 1.0.0
 host: api.gettyimages.com
 basePath: /
