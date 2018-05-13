@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Getty Images
-  description: Build applications using the world's most powerful imagery
+  title: Getty Images Search Editorial Images
+  description: Use this endpoint to search our editorial stock photos, illustrations
+    and archival images.  Editorial images represent newsworthy events or illustrate
+    matters of general interest, such as news, sport and entertainment and are generally
+    intended for editorial use.
   version: 1.0.0
 host: api.gettyimages.com
 basePath: /
