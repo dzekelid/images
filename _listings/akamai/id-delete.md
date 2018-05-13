@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Akamai Merged API
+  title: Akamai API Remove an Image Collection
+  description: Remove an Image Collection
   version: 1.0.0
+host: developer.akamai.com
+basePath: /
 schemes:
 - http
 produces:
@@ -16,7 +19,7 @@ paths:
       description: Remove an Image Collection
       operationId: id
       parameters:
-      - in: String
+      - in: query
         name: id
         description: 'Unique identifier for the image collection '
         type: string
