@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 Container Registry API
+  title: AWS EC2 Container Registry API List Images
   version: 1.0.0
+  description: Lists all the image IDs for a given repository.
 schemes:
 - http
 produces:
