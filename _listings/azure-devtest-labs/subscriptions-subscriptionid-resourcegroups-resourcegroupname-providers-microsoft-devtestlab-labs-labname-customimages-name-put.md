@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: DevTestLabsClient
-  description: The DevTest Labs Client.
+  title: Azure DevTest Labs API Custom Images Create Or Update
+  description: Create or replace an existing custom image. This operation can take
+    a while to complete.
   version: 1.0.0
 host: management.azure.com
 basePath: /
