@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 Container Registry API
+  title: AWS EC2 Container Registry API Put Image
   version: 1.0.0
+  description: Creates or updates the image manifest and tags associated with an image.
 schemes:
 - http
 produces:
