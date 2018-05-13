@@ -1,8 +1,15 @@
 ---
 swagger: "2.0"
 info:
-  title: Getty Images
-  description: Build applications using the world's most powerful imagery
+  title: Getty Images Get Downloads
+  description: "Returns information about a customer's previously downloaded assets.\r\n\r\nYou'll
+    need an API key and access token to use this resource. Please see our [Getting
+    Started](http://developers.gettyimages.com/en/getting-started.html) page for more
+    information on how to sign up for an API key. \r\n \r\n\t\r\nThis endpoint requires
+    being a Getty Images customer to limit your results to only assets that you have
+    a license to use, \r\nyou need to also include an authorization token in the header
+    of your request. \r\nPlease consult our [Authorization FAQ](http://developers.gettyimages.com/en/authorization-faq.html)
+    for more information on authorization tokens."
   version: 1.0.0
 host: api.gettyimages.com
 basePath: /
