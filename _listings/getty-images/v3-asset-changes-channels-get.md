@@ -1,8 +1,16 @@
 ---
 swagger: "2.0"
 info:
-  title: Getty Images
-  description: Build applications using the world's most powerful imagery
+  title: Getty Images Get Asset Change Channels
+  description: "# Get Partner Channels\r\n\r\nRetrieves the channel data for the partner.
+    This data can be used to populate the channel_id parameter in the Put Asset Changes
+    query.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner
+    Grant](http://developers.gettyimages.com/en/authorization-faq.html) access token
+    to use this resource.\r\nPlease see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
+    page for more information on how to sign up for an API key. \r\n\r\nOnly channels
+    that have been queried in the last 120 days will be included in the list of channels.\r\nPartners
+    who have a channel that has been removed should contact their sales representative
+    to be set up again."
   version: 1.0.0
 host: api.gettyimages.com
 basePath: /
