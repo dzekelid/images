@@ -32,24 +32,37 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Get Downloads
-  description: "Returns information about a customer's previously downloaded assets.\r\n\r\nYou'll
-    need an API key and access token to use this resource. Please see our [Getting
-    Started](http://developers.gettyimages.com/en/getting-started.html) page for more
-    information on how to sign up for an API key. \r\n \r\n\t\r\nThis endpoint requires
-    being a Getty Images customer to limit your results to only assets that you have
-    a license to use, \r\nyou need to also include an authorization token in the header
-    of your request. \r\nPlease consult our [Authorization FAQ](http://developers.gettyimages.com/en/authorization-faq.html)
-    for more information on authorization tokens."
+- name: Getty Images Download an image
+  description: "Use this endpoint to generate download URLs and related data for images
+    you are authorized to download.\r\n\r\nMost product offerings have enforced periodic
+    download limits such as monthly, weekly, and daily. When this operation executes,
+    the count of allowed downloads is decremented by one for the product offering.
+    Once the download limit is reached for a given product offering, no further downloads
+    may be requested for that product offering until the next download period.\r\n\r\nThe
+    download limit for a given download period is covered in your product agreement
+    established with Getty Images.\r\n\r\nYou'll need an API key and a [Resource Owner
+    Grant or Implicit Grant](http://developers.gettyimages.com/en/authorization-faq.html)
+    access token to use this resource. Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
+    page for more information on how to sign up for an API key. \r\n\r\n## Auto Downloads\r\nThe
+    `auto_download` request query parameter specifies whether to automatically download
+    the image.\r\n\r\nIf the `auto_download` request query parameter is set to _true_,
+    the API will return an HTTP status code 303 *See Other*.\u2002Your client code
+    will need to process this response and redirect to the URI specified in the *Location*
+    header to enable you to automatically download the file. The redirection workflow
+    follows the [HTTP 1.1 protocol](https://tools.ietf.org/html/rfc7231#section-6.4.4).\r\n\r\nClient
+    Request:\r\n\r\n```\r\nhttps://api.gettyimages.com/v3/downloads/images/[asset_id]?auto_download=true\r\n```\r\n\r\nServer
+    Response:\r\n\r\n```\r\nHTTP/1.1 303 See Other\r\nLocation: https://delivery.gettyimages.com/...\r\n```\r\n\r\nIf
+    the `auto_download` request query parameter is set to false, the API will return
+    a HTTP status code 200, along with the URI in the response body which can be used
+    to download the image. \r\n\r\nClient Request:\r\n\r\n```\r\nhttps://api.gettyimages.com/v3/downloads/images/[asset_id]?auto_download=false\r\n```\r\n\r\nServer
+    Response:\r\n\r\n```\r\nHTTP/1.1 200 OK\r\n{\r\n\t\"uri\": \"https://delivery.gettyimages.com/...\"\r\n}\r\n```"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
   humanURL: http://www.gettyimages.com/
   baseURL: https://api.gettyimages.com//
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-downloads-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-downloads-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-downloads-images-id-post.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
