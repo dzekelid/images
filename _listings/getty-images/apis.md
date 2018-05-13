@@ -32,28 +32,28 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Get metadata for multiple events
-  description: "This endpoint returns the detailed event metadata for all specified
-    events. Getty Images news, sports and entertainment photographers and\r\nvideographers
-    cover editorially relevant events occurring around the world.  All images or video
-    clips produced in association with \r\nan event, are assigned the same EventID.
-    EventIDs are part of the meta-data returned in SearchForImages Results. Only content
-    \r\nproduced under a Getty Images brand name (Getty Images News, Getty Images
-    Sports, Getty Images Entertainment, Film Magic, Wire Image) \r\nwill be consistently
+- name: Getty Images Get metadata for a single event
+  description: "This endpoint returns the detailed event metadata for a specified
+    event. Getty Images news, sports and entertainment \r\nphotographers and videographers
+    cover editorially relevant events occurring around the world.  \r\nAll images
+    or video clips produced in association with an event, are assigned the same EventID.
+    \r\nEventIDs are part of the meta-data returned in SearchForImages Results. Only
+    content produced under a Getty Images \r\nbrand name (Getty Images News, Getty
+    Images Sports, Getty Images Entertainment, Film Magic, Wire Image) will be \r\nconsistently
     assigned an EventID. The Event framework may also be used to group similar content,
     such as \r\n\"Hats from the Royal Wedding\" or \"Odd-ballOffbeat images of the
     week\". \r\n\r\nYou'll need an API key and access token to use this resource.
-    Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
-    page for more information on how to sign up for an API key."
+    Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)\r\npage
+    for more information on how to sign up for an API key."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
   humanURL: http://www.gettyimages.com/
   baseURL: https://api.gettyimages.com//
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-events-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-events-id-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-events-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-events-id-get-postman.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
