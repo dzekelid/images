@@ -32,21 +32,22 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Register Assets
-  description: "# Register Assets\r\n\r\nRegisters a list of assets that a customer
-    has stored in their system.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key
-    and a [Resource Owner Grant](http://developers.gettyimages.com/en/authorization-faq.html)
-    access token to use this resource.\r\nPlease see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
-    page for more information on how to sign up for an API key. \r\n\r\n_Note_: In
-    the event of a successful query (response code 200) there will be nothing in the
-    response body."
+- name: Getty Images Get All Boards
+  description: "Boards are where you collect, curate, collaborate on and manage photo
+    and video assets in one place. More information on the [Boards FAQ](http://www.gettyimages.com/boards/faq).
+    Use this endpoint to retrieve all Boards available for a user.\r\n\r\nYou'll need
+    an API key and a [Resource Owner Grant](http://developers.gettyimages.com/en/authorization-faq.html)
+    access token to use this resource. Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
+    page for more information on how to sign up for an API key."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
   humanURL: http://www.gettyimages.com/
   baseURL: https://api.gettyimages.com//
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-asset-registrations-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-boards-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-boards-get-postman.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
