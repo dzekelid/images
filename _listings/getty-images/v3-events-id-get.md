@@ -1,8 +1,19 @@
 ---
 swagger: "2.0"
 info:
-  title: Getty Images
-  description: Build applications using the world's most powerful imagery
+  title: Getty Images Get metadata for a single event
+  description: "This endpoint returns the detailed event metadata for a specified
+    event. Getty Images news, sports and entertainment \r\nphotographers and videographers
+    cover editorially relevant events occurring around the world.  \r\nAll images
+    or video clips produced in association with an event, are assigned the same EventID.
+    \r\nEventIDs are part of the meta-data returned in SearchForImages Results. Only
+    content produced under a Getty Images \r\nbrand name (Getty Images News, Getty
+    Images Sports, Getty Images Entertainment, Film Magic, Wire Image) will be \r\nconsistently
+    assigned an EventID. The Event framework may also be used to group similar content,
+    such as \r\n\"Hats from the Royal Wedding\" or \"Odd-ballOffbeat images of the
+    week\". \r\n\r\nYou'll need an API key and access token to use this resource.
+    Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)\r\npage
+    for more information on how to sign up for an API key."
   version: 1.0.0
 host: api.gettyimages.com
 basePath: /
