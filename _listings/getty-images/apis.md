@@ -91,64 +91,23 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-videos-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-videos-get-postman.md
-- name: Getty Images Search for editorial videos
-  description: "Use this endpoint to search current and archival video clips of celebrities,
-    newsmakers, and events.\r\n\r\nYou'll need an API key and access token to use
-    this resource. Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
-    page for more information on how to sign up for an API key.\r\n\r\nYou can show
-    different information in the response by specifying values on the \"fields\" parameter
-    (see details below).\r\nYou can search with only an API key, and that will give
-    you search results that are equivalent to doing a search on the GettyImages.com
-    site without being logged in (anonymous search).  If you are a Getty Images API
-    customer and would like to ensure that your API searches return only assets that
-    you have a license to use, you need to also include an authorization token in
-    the header of your request.  Please consult our [Authorization FAQ](http://developers.gettyimages.com/en/authorization-faq.html)
-    for more information on authorization tokens, and our [Authorization Workflows](https://github.com/gettyimages/gettyimages-api/blob/master/OAuth2Workflow.md)
-    for code examples of getting a token.\r\n\r\n## Working with Fields Sets\r\n\r\nFields
-    sets are used in the **fields** request parameter to receive a suite of metadata
-    fields. The following fields sets are available:\r\n\r\n#### Summary Fields Set\r\n\r\nThe
-    **summary_set** query string parameter fields value represents a small batch of
-    metadata fields that are often used to build search response results. The following
-    fields are provided for every video in your result set when you include **summary_set**
-    in your request.\r\n\r\n```\r\n{\r\n    \"videos\": \r\n    [\r\n        \"asset_family\",
-    \r\n        \"caption\",\r\n        \"collection_code\",\r\n        \"collection_name\",\r\n
-    \       \"display_sizes\":\r\n        [\r\n            {\r\n                \"name\":
-    \"comp\"\r\n            },\r\n            {\r\n                \"name\": \"preview\"\r\n
-    \           },\r\n            {\r\n                \"name\": \"thumb\"\r\n            }\r\n
-    \       ],\r\n        \"license_model\",\r\n        \"title\"\r\n    ]\r\n}\r\n```\r\n\r\n####
-    Detail Fields Set\r\n\r\nThe **detail_set** query string parameter fields value
-    represents a large batch of metadata fields that are often used to build a detailed
-    view of videos. The following fields are provided for every video in your result
-    set when you include **detail_set** in your request.\r\n\r\n```\r\n{\r\n    \"videos\":
-    \r\n    [\r\n        \"allowed_use\",\r\n        \"artist\",\r\n        \"asset_family\",
-    \r\n        \"caption\", \r\n        \"clip_length\",\r\n        \"collection_code\",\r\n
-    \       \"collection_id\",\r\n        \"collection_name\", \r\n        \"color_type\",\r\n
-    \       \"copyright\",\r\n        \"date_created\",\r\n        \"display_sizes\":\r\n
-    \       [\r\n            {\r\n                \"name\": \"comp\"\r\n            },\r\n
-    \           {\r\n                \"name\": \"preview\"\r\n            },\r\n            {\r\n
-    \               \"name\": \"thumb\"\r\n            }\r\n        ],\r\n        \"era\",\r\n
-    \       \"license_model\",\r\n        \"mastered_to\",\r\n        \"originally_shot_on\",\r\n
-    \       \"product_types\",\r\n        \"shot_speed\",\r\n        \"source\",\r\n
-    \       \"title\"\r\n    ]\r\n}\r\n```\r\n\r\n#### Display Fields Set\r\n\r\nThe
-    **display_set** query string parameter fields value represents the fields that
-    provide you with URLs for the low resolution files that are most frequently used
-    to build a UI displaying search results. The following fields are provided for
-    every video in your result set when you include **display_set** in your request.\r\n\r\n```\r\n{\r\n
-    \   \"videos\":\r\n    [\r\n        \"display_sizes\":\r\n        [\r\n            {\r\n
-    \               \"name\": \"comp\"\r\n            },\r\n            {\r\n                \"name\":
-    \"preview\"\r\n            },\r\n            {\r\n                \"name\": \"thumb\"\r\n
-    \           }\r\n        ]\r\n    ]\r\n}\r\n```\r\n\r\n## Request Usage Considerations\r\n\r\n-
-    Specifying the \"entity_details\" response field can have significant performance
-    implications. The field should be used only when necessary."
+- name: Getty Images Reports Usage Batches
+  description: "# Report Usage\r\n\r\nUse this endpoint to report the usages of a
+    set of assets. The count of assets submitted in a single batch to this endpoint
+    is limited to 1000. Note that all asset Ids specified must be valid or the operation
+    will fail causing no usages to be recorded. In this case, you will need to remove
+    the invalid asset Ids from the query request and re-submit the query.\r\n\r\n##
+    \ Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http://developers.gettyimages.com/en/authorization-faq.html)
+    access token to use this resource.\r\nPlease see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
+    page for more information on how to sign up for an API key. \r\n\r\n\r\n_Note_:
+    Date of use can be in any unambiguous date format."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
   humanURL: http://www.gettyimages.com/
   baseURL: https://api.gettyimages.com//
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-videos-editorial-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-search-videos-editorial-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-usage-batches-id-put.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
