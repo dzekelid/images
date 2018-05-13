@@ -34,15 +34,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/aws-ec2-container-registry-service/action-putimage-get.md
-- name: AWS EC2 Container Registry API List Images
-  description: Lists all the image IDs for a given repository.
+- name: AWS EC2 Container Registry API Put Image
+  description: Creates or updates the image manifest and tags associated with an image.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonECR.png
   humanURL: https://aws.amazon.com/ecr/
   baseURL: http:://{host}//
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/aws-ec2-container-registry-service/action-listimages-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/aws-ec2-container-registry-service/action-putimage-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/AmazonECR/latest/APIReference/Welcome.html
