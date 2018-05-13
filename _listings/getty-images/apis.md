@@ -32,12 +32,12 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Get Products
-  description: "This endpoint returns all products available to the username used
-    during authentication. As such, this endpoint requires the use of\r\na fully authorized
-    access_token. The product data can then be used as search filters, restricting
-    results to images from a specific product.\r\n\r\nYou'll need an API key and access
-    token to use this resource. Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)\r\npage
+- name: Getty Images Get Purchased Images
+  description: "This endpoint returns a list of all assets purchased on gettyimages.com
+    by the username used for authentication. \r\nUse of this endpoint requires configuration
+    changes to your API key. \r\nPlease contact [developersupport@gettyimages.com](mailto:developersupport@gettyimages.com)
+    to learn more.\r\n\r\nYou'll need an API key and access token to use this resource.
+    Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)\r\npage
     for more information on how to sign up for an API key."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
   humanURL: http://www.gettyimages.com/
@@ -45,9 +45,9 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-products-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-purchased-assets-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-products-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-purchased-assets-get-postman.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
