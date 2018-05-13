@@ -32,26 +32,26 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Get Images
-  description: "This endpoint returns the detailed image metadata for all specified
-    images. Due to a wide variety of available image resolutions,\r\nthe images are
+- name: Getty Images Get Image
+  description: "This endpoint returns the detailed image metadata for a specified
+    image. Due to a wide variety of available image resolutions, \r\nthe images are
     grouped into a handful of size categories for simplicity. \r\n\r\nYou'll need
     an API key and access token to use this resource. Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
-    \r\npage for more information on how to sign up for an API key. \r\n\r\n## Working
+    \r\npage for more information on how to sign up for an API key. \r\n \r\n## Working
     with Fields Sets\r\n\r\nFields sets are used in the **fields** request parameter
     to receive a suite of metadata fields. The following fields sets are available:\r\n\r\n####
     Summary Fields Set\r\n\r\nThe **summary_set** query string parameter fields value
-    represents a small batch of metadata fields that are often used to build \r\nsearch
-    response results. The following fields are provided for every image in your result
+    represents a small batch of metadata fields that\r\nare often used to build search
+    response results. The following fields are provided for every image in your\r\nresult
     set when you include **summary_set** in your request.\r\n\r\n```\r\n{\r\n    \"images\":\r\n
     \   [\r\n        \"artist\",\r\n        \"asset_family\",\r\n        \"caption\",\r\n
     \       \"collection_code\",\r\n        \"collection_id\",\r\n        \"collection_name\",\r\n
     \       \"license_model\",\r\n        \"max_dimensions\",\r\n        \"title\"\r\n
     \   ]\r\n}\r\n```\r\n\r\n#### Detail Fields Set\r\n\r\nThe **detail_set** query
     string parameter fields value represents a large batch of metadata fields that
-    are often used to build a \r\ndetailed view of images. The following fields are
-    provided for every image in your result set when you include **detail_set** in
-    your request.\r\n\r\n```\r\n{\r\n    \"images\":\r\n    [\r\n        \"allowed_use\",\r\n
+    are \r\noften used to build a detailed view of images. The following fields are
+    provided for every image in your \r\nresult set when you include **detail_set**
+    in your request.\r\n\r\n```\r\n{\r\n    \"images\":\r\n    [\r\n        \"allowed_use\",\r\n
     \       \"artist\", \r\n        \"artist_title\", \r\n        \"asset_family\",\r\n
     \       \"call_for_image\",\r\n        \"caption\", \r\n        \"city\",\r\n
     \       \"collection_code\",\r\n        \"collection_id\", \r\n        \"collection_name\",\r\n
@@ -63,9 +63,9 @@ apis:
     \       \"quality_rank\",\r\n        \"referral_destinations\",\r\n        \"state_province\",
     \r\n        \"title\"\r\n    ]\r\n}\r\n```\r\n\r\n#### Display Fields Set\r\n\r\nThe
     **display_set** query string parameter fields value represents the fields that
-    provide you with URLs for the low resolution\r\nfiles that are most frequently
+    provide you with URLs for the low\r\nresolution files that are most frequently
     used to build a UI displaying search results. The following fields are provided
-    for every image \r\nin your result set when you include **display_set** in your
+    \r\nfor every image in your result set when you include **display_set** in your
     request.\r\n\r\n```\r\n{\r\n    \"images\":\r\n    [\r\n        \"display_sizes\":
     \r\n        [\r\n            {\r\n                \"name\": \"comp\"\r\n            },\r\n
     \           {\r\n                \"name\": \"preview\"\r\n            },\r\n            {\r\n
@@ -79,9 +79,9 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-images-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-images-id-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-images-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-images-id-get-postman.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
