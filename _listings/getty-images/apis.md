@@ -32,8 +32,8 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-videos-id-similar-get.md
-- name: Getty Images Download an image
-  description: "Use this endpoint to generate download URLs and related data for images
+- name: Getty Images Download a video
+  description: "Use this endpoint to generate download URLs and related data for videos
     you are authorized to download.\r\n\r\nMost product offerings have enforced periodic
     download limits such as monthly, weekly, and daily. When this operation executes,
     the count of allowed downloads is decremented by one for the product offering.
@@ -45,16 +45,16 @@ apis:
     access token to use this resource. Please see our [Getting Started](http://developers.gettyimages.com/en/getting-started.html)
     page for more information on how to sign up for an API key. \r\n\r\n## Auto Downloads\r\nThe
     `auto_download` request query parameter specifies whether to automatically download
-    the image.\r\n\r\nIf the `auto_download` request query parameter is set to _true_,
+    the video.\r\n\r\nIf the `auto_download` request query parameter is set to _true_,
     the API will return an HTTP status code 303 *See Other*.\u2002Your client code
     will need to process this response and redirect to the URI specified in the *Location*
     header to enable you to automatically download the file. The redirection workflow
     follows the [HTTP 1.1 protocol](https://tools.ietf.org/html/rfc7231#section-6.4.4).\r\n\r\nClient
-    Request:\r\n\r\n```\r\nhttps://api.gettyimages.com/v3/downloads/images/[asset_id]?auto_download=true\r\n```\r\n\r\nServer
+    Request:\r\n\r\n```\r\nhttps://api.gettyimages.com/v3/downloads/videos/[asset_id]?auto_download=true\r\n```\r\n\r\nServer
     Response:\r\n\r\n```\r\nHTTP/1.1 303 See Other\r\nLocation: https://delivery.gettyimages.com/...\r\n```\r\n\r\nIf
     the `auto_download` request query parameter is set to false, the API will return
     a HTTP status code 200, along with the URI in the response body which can be used
-    to download the image. \r\n\r\nClient Request:\r\n\r\n```\r\nhttps://api.gettyimages.com/v3/downloads/images/[asset_id]?auto_download=false\r\n```\r\n\r\nServer
+    to download the video. \r\n\r\nClient Request:\r\n\r\n```\r\nhttps://api.gettyimages.com/v3/downloads/videos/[asset_id]?auto_download=false\r\n```\r\n\r\nServer
     Response:\r\n\r\n```\r\nHTTP/1.1 200 OK\r\n{\r\n\t\"uri\": \"https://delivery.gettyimages.com/...\"\r\n}\r\n```"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/getty-images.jpeg
   humanURL: http://www.gettyimages.com/
@@ -62,7 +62,7 @@ apis:
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-downloads-images-id-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/getty-images/v3-downloads-videos-id-post.md
 x-common:
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
