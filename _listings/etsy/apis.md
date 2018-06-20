@@ -1,59 +1,72 @@
 ---
 name: Etsy
-description: Etsy is a website that focuses on handmade and vintage items, as well
-  as art and craft supplies. The items include art, photography, clothing, jewelry,
-  edibles, quilts, and toys. Etsy is modeled after open craft fairs that give sellers
-  personal storefronts where they can list their goods. The company charges users
-  a flat listing fee (of 20 cents per items), and takes a commission of 3.5% off all
-  items sold. Since its launch in June 2005, the site has continually added new widgets
-  and features, and has seen corresponding growth.
-image: http://pbs.twimg.com/profile_images/613742962095341568/VGmQvBw8_normal.png
+x-slug: etsy
+description: Find handmade, vintage, and unique goods that express who you are.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.jpg
 x-kinRank: "9"
-x-alexaRank: ""
-tags:
-- Woodworking
-- Weddings
-- Vintage
-- Toys
-- Supplies
-- Stack Network
-- Stack
-- Quilts
-- Product
-- Plants and Edibles
-- Pets
-- Patterns
-- Paper Goods
-- Needlecraft
-- Knitting
-- Jewelry
-- Housewares
-- Holidays
-- Glass
-- Geekery
-- Furniture
-- Dolls and Miniatures
-- Crochet
-- Crafts
-- Clothing
-- Children
-- API LIfeycle
-created: "2018-05-13"
-modified: "2018-05-13"
+x-alexaRank: "187"
+tags: Images
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/etsy/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Etsy Get Listings Listing Images
-  description: Retrieves a set of ListingImage objects associated to a Listing.
-  image: http://pbs.twimg.com/profile_images/613742962095341568/VGmQvBw8_normal.png
+- name: Etsy Get Listings Listing Images Listing Image
+  x-api-slug: etsy
+  description: Retrieves a ListingImage by id.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.jpg
   humanURL: http://www.etsy.com/
-  baseURL: https://openapi.etsy.com//v2/private
+  baseURL: https://openapi.etsy.com//v2/private///listings/{listing_id}/images/{listing_image_id}
+  tags: Listings,Images,Listing,Image
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/etsy/listingslisting-idimageslisting-image-id-get-openapi.md
+- name: Etsy Delete Listings Listing Images Listing Image
+  x-api-slug: etsy
+  description: Deletes a listing image
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.jpg
+  humanURL: http://www.etsy.com/
+  baseURL: https://openapi.etsy.com//v2/private///listings/{listing_id}/images/{listing_image_id}
+  tags: Listings,Images,Listing,Image
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/etsy/listingslisting-idimageslisting-image-id-delete-openapi.md
+- name: Etsy Post Listings Listing Images
+  x-api-slug: etsy
+  description: Upload a new listing image
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.jpg
+  humanURL: http://www.etsy.com/
+  baseURL: https://openapi.etsy.com//v2/private///listings/{listing_id}/images
+  tags: Listings,Images
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/etsy/listingslisting-idimages-post-openapi.md
+- name: Etsy Get Listings Listing Images
+  x-api-slug: etsy
+  description: Retrieves a set of ListingImage objects associated to a Listing.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.jpg
+  humanURL: http://www.etsy.com/
+  baseURL: https://openapi.etsy.com//v2/private///listings/{listing_id}/images
+  tags: Listings,Images
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/etsy/listingslisting-idimages-get-openapi.md
+- name: Etsy
+  x-api-slug: etsy
+  description: Etsy is a handmade marketplace. The Etsy API lets developers tap into
+    the Etsy community, building their own Etsy-powered applications for the web,
+    desktop and mobile devices. Applications built on the API will connect buyers
+    with sellers, promote the handmade lifestyle, and support the craftspeople who
+    sell on Etsy.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.jpg
+  humanURL: http://www.etsy.com/
+  baseURL: https://openapi.etsy.com//v2/private/
   tags: Images
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/etsy/listings-listing-id-images-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/etsy/openapi.md
 x-common:
-- type: x-apijson--authoritative
+- type: x-api-json--authoritative
   url: http://apis.io/apisdef/etsy.json
 - type: x-application-gallery
   url: https://www.etsy.com/apps/
@@ -66,9 +79,23 @@ x-common:
 - type: x-copyright
   url: https://www.etsy.com/help/article/482/?ref=ftr
 - type: x-crunchbase
+  url: https://crunchbase.com/organization/etsy
+- type: x-crunchbase
   url: http://www.crunchbase.com/company/etsy
 - type: x-developer
   url: https://www.etsy.com/developers/
+- type: x-email
+  url: enaffiliates@etsy.com
+- type: x-email
+  url: selleraffiliate@etsy.com
+- type: x-email
+  url: developer@etsy.com
+- type: x-email
+  url: legal@etsy.com
+- type: x-email
+  url: dpo@etsy.com
+- type: x-email
+  url: dispute-resolution@etsy.com
 - type: x-forum
   url: https://www.etsy.com/developers/discussion
 - type: x-github
@@ -83,6 +110,8 @@ x-common:
   url: https://twitter.com/Etsy
 - type: x-website
   url: http://www.etsy.com/
+- type: x-website
+  url: http://etsy.com
 include: []
 maintainers:
 - FN: Kin Lane
