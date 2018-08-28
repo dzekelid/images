@@ -40,6 +40,35 @@ paths:
       - Airplanes
       - Images
       - Airlines
+  /api/mobile/image:
+    get:
+      summary: Mobile Image
+      description: Mobile API Flight Mobile Image Operation
+      operationId: flights-mobile-image
+      x-api-path-slug: apimobileimage-get
+      parameters:
+      - in: query
+        name: imageCode
+        description: image primary key, for example CAR:ECONOMY ACTIVITY:DISNEY DESTINATION:JFK
+          DESTINATIONMOBILEWEB:JFK CARMOBILEWEB:MINI
+      - in: query
+        name: imageHeight
+        description: Requested height of the image
+      - in: query
+        name: imageType
+        description: type of image
+      - in: query
+        name: imageWidth
+        description: Requested width of the image
+      responses:
+        200:
+          description: OK
+      tags:
+      - Travel
+      - Airports
+      - Airplanes
+      - Images
+      - Airlines
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

@@ -1,29 +1,17 @@
 ---
 name: Cutcaster
-description: In a world that is becoming increasingly more visual, the ability to
-  find and use images effectively gives communications professionals a competitive
-  advantage. nbsp;Cutcaster has tapped into a new creative universe of unique photos
-  and vector illustrations that can be purchased royalty free for use in publishing,
-  web design project, printing brochures, advertising, corporate marketing, electronic
-  usage on websites and presentations. Cutcaster is the first model that adds a dynamic
-  marketplace structure to support licensing user-generated photography and vectors.
-  If you donrsquo;t have the budget or time to create the content yourself and want
-  to find the most original, highest quality and authentic content not previously
-  available to license and within your budget, then join us for free at Cutcaster.lt;/pgt;
-image: ""
+x-slug: cutcaster
+description: Cutcaster sells pictures and clipart for use on websites, design projects,
+  powerpoint presentations, blogs or anytime you need a unique image to tell your
+  story.    Search our picture library via our lightning quick search engine, download
+  comps, buy s...
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/748-cutcaster.jpg
 x-kinRank: "9"
-x-alexaRank: ""
-tags:
-- Stock
-- Stack Network
-- Photo
-- Photo
-- Photo
-- Images
-- Image
-created: "2018-03-10"
-modified: "2018-03-10"
-url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/cutcaster/apis.yaml
+x-alexaRank: "1137461"
+tags: Images
+created: "2018-08-27"
+modified: "2018-08-27"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/cutcaster/apis.md
 specificationVersion: "0.14"
 apis: []
 x-common:
@@ -33,8 +21,18 @@ x-common:
   url: http://blog.cutcaster.com/feed/
 - type: x-crunchbase
   url: http://www.crunchbase.com/company/cutcaster
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/cutcaster
 - type: x-developer
   url: http://cutcaster.com/help/api/
+- type: x-email
+  url: webmaster@cutcaster.com
+- type: x-email
+  url: help@cutcaster.com
+- type: x-email
+  url: feedback@cutcaster.com
+- type: x-email
+  url: unsubscribe@cutcaster.com
 - type: x-github
   url: https://github.com/Cutcaster
 - type: x-pricing

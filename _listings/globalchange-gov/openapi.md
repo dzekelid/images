@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: GlobalChange.gov
 x-complete: 1
@@ -56,4 +55,25 @@ paths:
       - Images
       - Associated
       - Report
----
+  /image/{image_identifier}:
+    get:
+      summary: Get a representation of an image.
+      description: Get JSON which represents the structure of an image.
+      operationId: get-json-which-represents-the-structure-of-an-image
+      x-api-path-slug: imageimage-identifier-get
+      parameters:
+      - in: path
+        name: image_identifier
+        description: image_identifier description
+      - in: query
+        name: with_gcmd
+        description: Include GCMD keywords associated with the image
+      - in: query
+        name: with_regions
+        description: Include regions associated with the image
+      responses:
+        200:
+          description: OK
+      tags:
+      - Representation
+      - Image

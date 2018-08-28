@@ -1,29 +1,15 @@
 ---
 name: Cloudinary
-description: Cloudinary is a cloud-based service that answers a website or mobile
-  applicationrsquo;s entire image management needs - uploads, storage, manipulations,
-  optimizations and delivery. Cloudinaryrsquo;s users can easily move all their websitersquo;s
-  images to the cloud. Automatically perform smart image resizing, cropping, merging,
-  overlay, watermark, apply effects, rotations and perform format conversions. All
-  this without installing any complex software. Integrate social website (Facebook,
-  Twitter, etc.) profile image extraction, fetch images from any online resource in
-  any dimension and style to match a websitersquo;s graphics requirements, and much
-  more.nbsp;
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1039_logo.png
+x-slug: cloudinary
+description: 'Manage web and mobile media assets with the leading cloud service: image
+  and video upload, storage, manipulation, optimization and digital asset management.'
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1039-cloudinary.jpg
 x-kinRank: "8"
-x-alexaRank: ""
-tags:
-- Stack Network
-- Media management
-- Local
-- Images
-- Content delivery network
-- Content
-- Cloud
-- Cloud
-created: "2018-03-10"
-modified: "2018-03-10"
-url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/cloudinary/apis.yaml
+x-alexaRank: "5332"
+tags: Images
+created: "2018-08-27"
+modified: "2018-08-27"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/cloudinary/apis.md
 specificationVersion: "0.14"
 apis: []
 x-common:
@@ -35,6 +21,18 @@ x-common:
   url: http://feeds.feedburner.com/CloudinaryBlog
 - type: x-crunchbase
   url: http://www.crunchbase.com/company/cloudinary
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/cloudinary
+- type: x-email
+  url: support@cloudinary.com
+- type: x-email
+  url: info@cloudinary.com
+- type: x-email
+  url: noa@cloudinary.com
+- type: x-email
+  url: jobs@cloudinary.com
+- type: x-email
+  url: privacy@cloudinary.com
 - type: x-github
   url: https://github.com/cloudinary
 - type: x-pricing

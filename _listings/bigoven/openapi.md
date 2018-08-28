@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: BigOven
 x-complete: 1
@@ -34,4 +33,32 @@ paths:
       - Recipe
       - RecipeId
       - Images
----
+  /recipe/{recipeId}/image:
+    post:
+      summary: "POST: /recipe/{recipeId}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n
+        \            \r\n             Note that caption, lng and lat are all optional,
+        but must go on the request URI as params because this endpoint\r\n             needs
+        a m"
+      description: "Post: /recipe/{recipeid}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n
+        \            \r\n             note that caption, lng and lat are all optional,
+        but must go on the request uri as params because this endpoint\r\n             needs
+        a m."
+      operationId: Images_UploadRecipeImage
+      x-api-path-slug: reciperecipeidimage-post
+      parameters:
+      - in: query
+        name: caption
+      - in: query
+        name: lat
+      - in: query
+        name: lng
+      - in: path
+        name: recipeId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Recipes
+      - Recipe
+      - RecipeId
+      - Image

@@ -7,35 +7,29 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/795-frames
 x-kinRank: "8"
 x-alexaRank: "5719311"
 tags: Images
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/framesocket/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Framesocket Query Images
-  x-api-slug: framesocket
+- name: Framesocket - Query Images
+  x-api-slug: mediaimages-php-get
   description: Query Images
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/795-framesocket.jpg
   humanURL: http://framesocket.com
-  baseURL: ://www.framesocket.com//api//media/images.php
-  tags: Media,Images
+  baseURL: ://www.framesocket.com//api
+  tags: Hosting, Mobile, Stack Network, Technology, SaaS, internet, API Provider,
+    Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/framesocket/mediaimages-php-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/framesocket/mediaimages-php-get-openapi.md
-- name: Framesocket
-  x-api-slug: framesocket
-  description: framesocket is the best way for developers and content owners to tackle
-    video projects of any size.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/795-framesocket.jpg
-  humanURL: http://framesocket.com
-  baseURL: ://www.framesocket.com//api
-  tags: Images
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/framesocket/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://foursquare.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://framesocket.stack.network
 - type: x-base
   url: http://www.framesocket.com/api/
 - type: x-blog

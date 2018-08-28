@@ -34,6 +34,55 @@ paths:
       - Images
       - Listing
       - Image
+    delete:
+      summary: Delete Listings Listing Images Listing Image
+      description: Deletes a listing image
+      operationId: deleteListingsListingImagesListingImage
+      x-api-path-slug: listingslisting-idimageslisting-image-id-delete
+      parameters:
+      - in: path
+        name: listing_id
+      - in: path
+        name: listing_image_id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Listings
+      - Images
+      - Listing
+      - Image
+  /listings/{listing_id}/images:
+    post:
+      summary: Post Listings Listing Images
+      description: Upload a new listing image
+      operationId: postListingsListingImages
+      x-api-path-slug: listingslisting-idimages-post
+      parameters:
+      - in: query
+        name: image
+      - in: path
+        name: listing_id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Listings
+      - Images
+    get:
+      summary: Get Listings Listing Images
+      description: Retrieves a set of ListingImage objects associated to a Listing.
+      operationId: getListingsListingImages
+      x-api-path-slug: listingslisting-idimages-get
+      parameters:
+      - in: path
+        name: listing_id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Listings
+      - Images
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

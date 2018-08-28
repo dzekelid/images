@@ -7,47 +7,42 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28554-bbc-
 x-kinRank: "7"
 x-alexaRank: "93"
 tags: Images
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bbc/apis.md
 specificationVersion: "0.14"
 apis:
-- name: BBC Nitro Find metadata for images
-  x-api-slug: bbc-nitro
+- name: BBC Nitro - Find metadata for images
+  x-api-slug: images-get
   description: Find metadata for images, particularly those in galleries
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28554-bbc-nitro.jpg
   humanURL: http://www.bbc.com/
-  baseURL: https://programmes.api.bbc.com//nitro/api//images
-  tags: Images
+  baseURL: https://programmes.api.bbc.com//nitro/api
+  tags: Media, API Provider, Broadcasts, Profiles, Publish, General Data, Historical
+    Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bbc/images-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bbc/images-get-openapi.md
-- name: BBC Nitro Get raw image
-  x-api-slug: bbc-nitro
+- name: BBC Nitro - Get raw image
+  x-api-slug: v1imagespid-get
   description: Get raw image
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28554-bbc-nitro.jpg
   humanURL: http://www.bbc.com/
-  baseURL: https://programmes.api.bbc.com//nitro/api//v1/images/{pid}
-  tags: V1,Images,Pid
+  baseURL: https://programmes.api.bbc.com//nitro/api
+  tags: Media, API Provider, Broadcasts, Profiles, Publish, General Data, Historical
+    Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bbc/v1imagespid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bbc/v1imagespid-get-openapi.md
-- name: BBC Nitro
-  x-api-slug: bbc-nitro
-  description: Breaking news, sport, TV, radio and a whole lot more. The BBC informs,
-    educates and entertains - wherever you are, whatever your age.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28554-bbc-nitro.jpg
-  humanURL: http://www.bbc.com/
-  baseURL: https://programmes.api.bbc.com//nitro/api
-  tags: Images
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bbc/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://barclays.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://bbc.stack.network
 - type: x-crunchbase
   url: https://crunchbase.com/organization/bbc-news
 - type: x-email

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: UK National Archives
 x-complete: 1
@@ -459,4 +458,3 @@ paths:
       - Search
       - Images
       - Editorial
----

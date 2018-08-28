@@ -1,5 +1,6 @@
 ---
 name: Instagram
+x-slug: instagram
 description: Instagram is an online mobile photo-sharing, video-sharing and social
   networking service that enables its users to take pictures and videos, and share
   them on a variety of social networking platforms, such as Facebook, Twitter, Tumblr
@@ -9,27 +10,18 @@ description: Instagram is an online mobile photo-sharing, video-sharing and soci
   their images. The maximum duration for Instagram videos is 15 seconds.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/glyph-logo_May2016_200.png
 x-kinRank: "9"
-x-alexaRank: ""
-tags:
-- Stack Network
-- Stack
-- Social
-- Photos
-- Photo API
-- Photo
-- My API Stack
-- Media
-- Indie EdTech Data Jam
-- Imports
-- Images
-- Change Log Example
-- Change Log
-created: "2018-03-10"
-modified: "2018-03-10"
-url: https://raw.githubusercontent.com/streamdata-gallery/images/master/_listings/instagram/apis.yaml
+x-alexaRank: "0"
+tags: Images
+created: "2018-08-27"
+modified: "2018-08-27"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/instagram/apis.md
 specificationVersion: "0.14"
 apis: []
 x-common:
+- type: x-api-gallery
+  url: http://infermedica.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://instagram.stack.network
 - type: x-application-management
   url: https://instagram.com/accounts/manage_access/
 - type: x-authentication

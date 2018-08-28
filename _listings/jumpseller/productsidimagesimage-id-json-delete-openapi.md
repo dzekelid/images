@@ -99,6 +99,27 @@ paths:
       - Image
       - Id
       - Json
+    get:
+      summary: Get Products Images Image
+      description: ""
+      operationId: getProductsImagesImage.json
+      x-api-path-slug: productsidimagesimage-id-json-get
+      parameters:
+      - in: path
+        name: image_id
+        description: Id of the Product Image
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Products
+      - Id
+      - Images
+      - Image
+      - Id
+      - Json
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

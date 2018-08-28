@@ -12,107 +12,98 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Images
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/uk-national-archives/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Getty Images Search API Post Downloads Images
-  x-api-slug: getty-images-search-api
+- name: Getty Images - Post Downloads Images
+  x-api-slug: v3downloadsimagesid-post
   description: Download an image.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uk-national-archives.jpeg
   humanURL: http://discovery.nationalarchives.gov.uk/SearchUI/api.htm
-  baseURL: https://api.gettyimages.com////v3/downloads/images/{id}
-  tags: Downloads,Images
+  baseURL: https://api.gettyimages.com//
+  tags: Archives, Catalog, Government, History, General Data, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/uk-national-archives/v3downloadsimagesid-post-openapi.md
-- name: Getty Images Search API Get Images
-  x-api-slug: getty-images-search-api
+- name: Getty Images - Get Images
+  x-api-slug: v3images-get
   description: Get metadata for multiple images by supplying multiple image ids.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uk-national-archives.jpeg
   humanURL: http://discovery.nationalarchives.gov.uk/SearchUI/api.htm
-  baseURL: https://api.gettyimages.com////v3/images
-  tags: Images
+  baseURL: https://api.gettyimages.com//
+  tags: Archives, Catalog, Government, History, General Data, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/uk-national-archives/v3images-get-openapi.md
-- name: Getty Images Search API Get Images
-  x-api-slug: getty-images-search-api
+- name: Getty Images - Get Images
+  x-api-slug: v3imagesid-get
   description: Get metadata for a single image by supplying one image id.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uk-national-archives.jpeg
   humanURL: http://discovery.nationalarchives.gov.uk/SearchUI/api.htm
-  baseURL: https://api.gettyimages.com////v3/images/{id}
-  tags: Images
+  baseURL: https://api.gettyimages.com//
+  tags: Archives, Catalog, Government, History, General Data, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/uk-national-archives/v3imagesid-get-openapi.md
-- name: Getty Images Search API Get Images Similar
-  x-api-slug: getty-images-search-api
+- name: Getty Images - Get Images Similar
+  x-api-slug: v3imagesidsimilar-get
   description: Search for images similar to an image.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uk-national-archives.jpeg
   humanURL: http://discovery.nationalarchives.gov.uk/SearchUI/api.htm
-  baseURL: https://api.gettyimages.com////v3/images/{id}/similar
-  tags: Images,Similar
+  baseURL: https://api.gettyimages.com//
+  tags: Archives, Catalog, Government, History, General Data, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/uk-national-archives/v3imagesidsimilar-get-openapi.md
-- name: Getty Images Search API Get Purchased Images
-  x-api-slug: getty-images-search-api
+- name: Getty Images - Get Purchased Images
+  x-api-slug: v3purchasedimages-get
   description: Get previously purchased images.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uk-national-archives.jpeg
   humanURL: http://discovery.nationalarchives.gov.uk/SearchUI/api.htm
-  baseURL: https://api.gettyimages.com////v3/purchased-images
-  tags: Purchased,Images
+  baseURL: https://api.gettyimages.com//
+  tags: Archives, Catalog, Government, History, General Data, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/uk-national-archives/v3purchasedimages-get-openapi.md
-- name: Getty Images Search API Get Search Images
-  x-api-slug: getty-images-search-api
+- name: Getty Images - Get Search Images
+  x-api-slug: v3searchimages-get
   description: Search for both creative and editorial images.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uk-national-archives.jpeg
   humanURL: http://discovery.nationalarchives.gov.uk/SearchUI/api.htm
-  baseURL: https://api.gettyimages.com////v3/search/images
-  tags: Search,Images
+  baseURL: https://api.gettyimages.com//
+  tags: Archives, Catalog, Government, History, General Data, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/uk-national-archives/v3searchimages-get-openapi.md
-- name: Getty Images Search API Get Search Images Creative
-  x-api-slug: getty-images-search-api
+- name: Getty Images - Get Search Images Creative
+  x-api-slug: v3searchimagescreative-get
   description: Search for creative images only.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uk-national-archives.jpeg
   humanURL: http://discovery.nationalarchives.gov.uk/SearchUI/api.htm
-  baseURL: https://api.gettyimages.com////v3/search/images/creative
-  tags: Search,Images,Creative
+  baseURL: https://api.gettyimages.com//
+  tags: Archives, Catalog, Government, History, General Data, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/uk-national-archives/v3searchimagescreative-get-openapi.md
-- name: Getty Images Search API Get Search Images Editorial
-  x-api-slug: getty-images-search-api
+- name: Getty Images - Get Search Images Editorial
+  x-api-slug: v3searchimageseditorial-get
   description: Search for editorial images only.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uk-national-archives.jpeg
   humanURL: http://discovery.nationalarchives.gov.uk/SearchUI/api.htm
-  baseURL: https://api.gettyimages.com////v3/search/images/editorial
-  tags: Search,Images,Editorial
+  baseURL: https://api.gettyimages.com//
+  tags: Archives, Catalog, Government, History, General Data, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/uk-national-archives/v3searchimageseditorial-get-openapi.md
-- name: Getty Images Search API
-  x-api-slug: getty-images-search-api
-  description: Our set of APIs enable seamless integration of Getty Images expansive
-    content, powerful search and rich metadata directly into your internal workflows,
-    products and services. With Connects API solutions, you can fully control, customize
-    and scale as you grow.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uk-national-archives.jpeg
-  humanURL: http://discovery.nationalarchives.gov.uk/SearchUI/api.htm
-  baseURL: https://api.gettyimages.com//
-  tags: Images
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/uk-national-archives/openapi.md
 x-common:
 - type: x-website
   url: http://discovery.nationalarchives.gov.uk/SearchUI/api.htm
+- type: x-api-gallery
+  url: http://uebermaps.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://uk.national.archives.stack.network
 - type: x-website
   url: http:///Search
 include: []

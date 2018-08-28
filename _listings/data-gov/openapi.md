@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Data.Gov
 x-complete: 1
@@ -52,4 +51,24 @@ paths:
       tags:
       - Posts
       - Images
----
+  /reuses/{reuse}/image:
+    post:
+      summary: Add Reuses Reuse Image
+      description: Upload a new reuse image
+      operationId: postReusesReuseImage
+      x-api-path-slug: reusesreuseimage-post
+      parameters:
+      - in: formData
+        name: bbox
+      - in: formData
+        name: file
+      - in: path
+        name: reuse
+        description: The reuse ID or slug
+      responses:
+        200:
+          description: OK
+      tags:
+      - Reuses
+      - Reuse
+      - Image

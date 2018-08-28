@@ -7,35 +7,80 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/379-bigove
 x-kinRank: "8"
 x-alexaRank: "117577"
 tags: Images
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bigoven/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Big Oven Get all the images for a recipe. DEPRECATED. Please use /recipe/{recipeId}/photos.
-  x-api-slug: big-oven
+- name: Big Oven - Get all the images for a recipe. DEPRECATED. Please use /recipe/{recipeId}/photos.
+  x-api-slug: reciperecipeidimages-get
   description: Get all the images for a recipe. deprecated. please use /recipe/{recipeid}/photos..
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/379-bigoven.jpg
   humanURL: http://www.bigoven.com
-  baseURL: https://api2.bigoven.com////recipe/{recipeId}/images
-  tags: Recipes,Recipe,RecipeId,Images
+  baseURL: https://api2.bigoven.com//
+  tags: Cooking, Food, Nutrition, Recipes, Food, Stack Network, Mobile, Technology,
+    internet, API Provider, , Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bigoven/reciperecipeidimages-get-openapi.md
-- name: Big Oven
-  x-api-slug: big-oven
-  description: Free recipe app for home cooks. Create a meal plan, grocery list and
-    more from your favorite recipes. Organize your recipe collection and take it anywhere.
+- name: "Big Oven - POST: /recipe/{recipeId}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n
+    \            \r\n             Note that caption, lng and lat are all optional,
+    but must go on the request URI as params because this endpoint\r\n             needs
+    a m"
+  x-api-slug: reciperecipeidimage-post
+  description: "Post: /recipe/{recipeid}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n
+    \            \r\n             note that caption, lng and lat are all optional,
+    but must go on the request uri as params because this endpoint\r\n             needs
+    a m."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/379-bigoven.jpg
   humanURL: http://www.bigoven.com
   baseURL: https://api2.bigoven.com//
-  tags: Images
+  tags: Cooking, Food, Nutrition, Recipes, Food, Stack Network, Mobile, Technology,
+    internet, API Provider, , Profiles, General Data
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bigoven/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bigoven/reciperecipeidimage-post-openapi.md
+- name: "Big Oven - POST: /recipe/{recipeId}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n
+    \            \r\n             Note that caption, lng and lat are all optional,
+    but must go on the request URI as params because this endpoint\r\n             needs
+    a m"
+  x-api-slug: reciperecipeidimage-post
+  description: "Post: /recipe/{recipeid}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n
+    \            \r\n             note that caption, lng and lat are all optional,
+    but must go on the request uri as params because this endpoint\r\n             needs
+    a m."
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/379-bigoven.jpg
+  humanURL: http://www.bigoven.com
+  baseURL: https://api2.bigoven.com//
+  tags: Cooking, Food, Nutrition, Recipes, Food, Stack Network, Mobile, Technology,
+    internet, API Provider, , Profiles, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bigoven/reciperecipeidimage-post-openapi.md
+- name: "Big Oven - POST: /recipe/{recipeId}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n
+    \            \r\n             Note that caption, lng and lat are all optional,
+    but must go on the request URI as params because this endpoint\r\n             needs
+    a m"
+  x-api-slug: reciperecipeidimage-post
+  description: "Post: /recipe/{recipeid}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n
+    \            \r\n             note that caption, lng and lat are all optional,
+    but must go on the request uri as params because this endpoint\r\n             needs
+    a m."
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/379-bigoven.jpg
+  humanURL: http://www.bigoven.com
+  baseURL: https://api2.bigoven.com//
+  tags: Cooking, Food, Nutrition, Recipes, Food, Stack Network, Mobile, Technology,
+    internet, API Provider, , Profiles, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/images/master/_listings/bigoven/reciperecipeidimage-post-openapi.md
 x-common:
 - type: x-website
   url: http://www.bigoven.com
+- type: x-api-gallery
+  url: http://bigcommerce.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://bigoven.stack.network
 - type: x-base
   url: http://api.bigoven.com/
 - type: x-blog

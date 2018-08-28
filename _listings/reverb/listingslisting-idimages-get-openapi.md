@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Reverb
 x-complete: 0
 info:
-  title: reverb Get Listings Listing Images
+  title: Reverb Get Listings Listing Images
   description: View the images associated with a particular listing
   termsOfService: https://reverb.com/page/terms
   contact:

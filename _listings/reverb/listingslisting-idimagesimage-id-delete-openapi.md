@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Reverb
 x-complete: 0
 info:
-  title: reverb Delete Listings Listing Images Image
+  title: Reverb Delete Listings Listing Images Image
   description: Delete listings listing images image.
   termsOfService: https://reverb.com/page/terms
   contact:

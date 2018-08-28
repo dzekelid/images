@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: NewsCred
 x-complete: 1
@@ -86,4 +85,21 @@ paths:
       - News
       - Topice
       - Images
----
+  image/{guid}/:
+    get:
+      summary: Image
+      description: Returns the image specified by the given GUID.
+      operationId: getImageGu
+      x-api-path-slug: imageguid-get
+      parameters:
+      - in: query
+        name: access_key
+        description: Unique API access key
+      - in: path
+        name: guid
+        description: The guid for the image
+      responses:
+        200:
+          description: OK
+      tags:
+      - Image
